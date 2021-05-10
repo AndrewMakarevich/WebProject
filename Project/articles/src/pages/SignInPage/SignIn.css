@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Inverkrug; /* Имя шрифта */
+    src: url(../../Fonts/customFont.otf); /* Путь к файлу со шрифтом */
+   }
+
+
+.headerSecond{
+    color:black;
+    padding-top:25px;
+    padding-bottom: 25px;
+    font-family: Inverkrug;
+    font-size: 3vw;
+    background-color:lightsalmon;
+}
+    
+
+.SignInWindow{
+    border-radius:5px;
+    width: 25%;
+    position: relative;
+    margin:auto;
+    margin-top:1vh;
+    background-color:wheat;
+}
+
+
+.signInInput{
+    width:15vw;
+    height: 1.4vw;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 1px solid black;
+    background:wheat;
+    margin:auto;
+}
+.signInInput:focus {
+    outline: none;
+  }
+.signInInput:hover {
+    background-color:thistle;
+    transition: 1s;
+}
+.signInLabel{
+    position:absolute;
+    pointer-events: none;
+    transition: .3s;
+    color:rgb(145, 140, 140);
+    padding-left:5vw;
+}
+
+.submitButtonSecond{
+    border: none;
+    background:wheat;
+    border-radius:3px;
+}
+.submitButtonSecond:hover{
+    background:thistle;
+    transition: .5s;
+}
+
+.data1Confirmation{
+    margin-top: 10px;
+}
+.data1Confirmation,
+.data2Confirmation
+{
+    font-size: 0.8vw;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    
+}
+
+
+
+/* АНИМАЦИЯ НАВЕДЕНИЯ НА ПОЛЯ*/
+.data1Confirmation:hover,
+.data2Confirmation:hover
+{
+    background-color:thistle;
+    transition: 1s;
+}
+.submitButtonSecond{
+    padding-bottom:10px;
+}
+
+
+/*Текст Перехода к странице входа*/
+.registerQuestion{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* АДАПТИВНОСТЬ РЕГИСТРАЦИОННОГО ПОЛЯ*/
+
+@media (max-width: 1000px){
+    .SignInWindow{
+        width:30%;
+    }
+    .signInLabel{
+        padding-left:7vw;
+    }
+    .signInInput{
+        height:3vw;
+    }
+}
+@media (max-width: 950px)
+{
+    .SignInWindow{
+        width:35%;
+    }
+    .signInLabel{
+        padding-left:10vw;
+    }
+    .headerSecond{
+        font-size: 5vw;
+    }
+} 
+@media (max-width: 650px)
+{
+    .SignInWindow{
+        width:40%;
+    }
+    .signInLabel{
+        padding-left:11.5vw;
+    }
+    .signInInput{
+        width:25vw;  
+    }
+} 
+@media (max-width: 515px)
+{
+    .SignInWindow{
+        width:60%;
+    }
+    .signInLabel{
+        padding-left:17vw;
+    }
+} 
+@media (max-width: 435px)
+{
+    .SignInWindow{
+        width:60%;
+    }
+    .headerSecond{
+        font-size: 9vw;
+    }
+    .signInInput{
+        height: 5vw;
+    }
+    
+} 

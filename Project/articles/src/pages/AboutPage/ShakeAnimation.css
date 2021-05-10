@@ -1,0 +1,94 @@
+/*АНИМАЦИЯ ПОЛЕТА*/
+
+.AnimatedBookFirst{
+    
+    height:6vw;
+    position: absolute;
+    display:flex;
+    transition: 1s;
+    animation: rotationFlight infinite 5s ease-in-out;
+}
+.AnimatedSpaceStation{
+    margin-top:5vw;
+    height:6vw;
+    position: absolute;
+    display:flex;
+    transition: 1s;
+    animation: rotationFlight infinite 3.5s ease-in-out;
+}
+.AnimatedMilitaryHelmet{
+    margin-top:9vw;
+    height:6vw;
+    position: absolute;
+    display:flex;
+    transition: 1s;
+    animation: rotationFlight infinite 4s ease-in-out;
+}
+.reversedAnimatedCaesar{
+    height:5vw;
+    position: absolute;
+    display:flex;
+    transition: 1s;
+    animation: reversedRotationFlight infinite 4s ease-in-out;
+    
+}
+.reversedAnimatedPencil{
+    margin-top:5vw;
+    height:6vw;
+    position: absolute;
+    display:flex;
+    transition: 1s;
+    animation: reversedRotationFlight infinite 3s ease-in-out;
+}
+.revesedAnimatedBookThird{
+    margin-top:9vw;
+    height:6vw;
+    position: absolute;
+    display:flex;
+    transition: 1s;
+    animation: reversedRotationFlight infinite 5s ease-in-out;
+}
+@keyframes rotationFlight {
+   
+    from{
+        transform: rotate(0deg); 
+        margin-left:-40%;    
+    }
+    to{
+        transform: rotate(360deg);  
+        margin-left:120%;
+    }
+    
+}
+@keyframes reversedRotationFlight {
+   
+    from{
+        transform: rotate(0deg); 
+        margin-left:120%;    
+    }
+    to{
+        transform: rotate(360deg);  
+        margin-left:-40%;
+    }
+    
+}
+
+/*АНИМАЦИЯ СТРЕЛКИ*/
+.firstAboutUsBlockArrow:hover,
+.secondAboutUsBlockArrow:hover,
+.thirdAboutUsBlockArrow:hover{
+    animation: shake infinite 2s;
+}
+@keyframes shake {
+    from{
+        transform: translate(inherit)
+    }
+    50%{
+        transform: translateY(-5px)
+    }
+    to{
+        transform: translate(inherit)
+    }
+    
+}
+

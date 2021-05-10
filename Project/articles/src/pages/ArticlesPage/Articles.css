@@ -1,0 +1,16 @@
+.articles{
+    margin-top:1vh;
+    color: white;
+}
+.articles div{
+    transition: 0.5s;
+    font-size: 7vw;
+    width:30%;
+    height: 33%;
+    background-color:rgb(173, 166, 166);
+    margin: 10px;
+    display:inline-block;
+}
+.articles div:hover{
+    transform: scale(0.8);
+}

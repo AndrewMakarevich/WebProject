@@ -1,0 +1,5 @@
+{
+   "port": 5000, 
+   "jwtSecret": "My Personal Project Andrei",
+   "mongoUrl": "mongodb+srv://andrei:andreipassword@cluster0.kyiea.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}

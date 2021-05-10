@@ -1,0 +1,151 @@
+
+.about{
+    margin-top:1vh;
+}
+.headerSection{
+    
+    position: relative;
+    overflow: hidden;
+    height: 15vw;
+    background: url(../../Images/AboutUsLogo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 10px;
+    font-size: 6vw;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+
+/*ТЕКСТ В ЗАГОЛОВКЕ*/
+.headerSectionSecondaryText{
+    margin-top: 12px;
+    font-size: 3vw;
+    color:rgb(70, 70, 189);  
+    animation: neon-1  linear infinite 6s; 
+}
+.headerSection .headerSectionSecondaryText span{
+    animation: neon-4  linear infinite 4s;
+}
+.headerSectionMainText{
+    color:rgb(54, 82, 238);
+    animation: neon-1  linear infinite .1s;
+}
+.headerSection .headerSectionMainText span{
+    animation: neon-4  linear infinite 3s;
+}
+/*НЕОНОВЫЙ ТЕКСТ*/
+@keyframes neon-1 {
+    from {
+        text-shadow:  0 -40px 100px, 0 0 2px, 0 0 1em #BFE2FF, 0 0 0.5em #BFE2FF, 0 0 0.1em #BFE2FF;
+    }
+    to {
+        text-shadow:  0 0px 95px, 0 0 2px, 0 0 1em #BFE2FF, 0 0 0.5em #BFE2FF, 0 0 0.1em #BFE2FF;
+    }
+}
+
+@keyframes neon-4 {
+    60% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    79%{
+        color: #0b3960;
+    }
+    80% {
+        text-shadow: none;
+    }
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82% {
+        color: #0b3960;
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    92% {
+        color: #0b3960;
+        text-shadow: none;
+    }
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+
+
+
+.mainBlock{
+  
+  height: auto;
+  
+}
+.AboutUsText{
+    color:white;
+}
+/*ПЕРВЫЙ БЛОК С ТЕКСТОМ*/
+.firstAboutUsBlock{
+    transition: .2s;
+    margin-top:25px;
+    margin-left:5vw;
+    margin-right:5vw;
+    background: url(../../Images/AboutUsImages/AboutUsLibraryPhoto.jpg);
+    background-size: cover;
+    min-height:0vw;    
+    font-size: 3vw;
+    font-weight: bold;
+}
+.firstAboutUsBlockArrow{
+    transition: .5s;
+    margin-top:-2vw;
+    width: 7vw;
+}
+.firstAboutUsBlockExtendedText{
+
+}
+/*ВТОРОЙ БЛОК С ТЕКСТОМ*/
+.secondAboutUsBlock{
+    transition: .2s;
+    margin-top:15px;
+    margin-left:5vw;
+    margin-right:5vw;
+    background: url(../../Images/AboutUsImages/AboutUsLibraryPhotoSecond.jpg);
+    background-size: cover;
+    height:фгещ;
+    font-size: 3vw;
+    font-weight: bold;
+    
+}
+.secondAboutUsBlockArrow{
+    transition: .5s;
+    margin-top:-2vw;
+    width: 7vw;
+}
+.secondAboutUsBlockExtendedText{
+}
+/*ТРЕТИЙ БЛОК С ТЕКСТОМ*/
+.thirdAboutUsBlock{
+    transition: .2s;
+    margin-top:15px;
+    margin-left:5vw;
+    margin-right:5vw;
+    background: url(../../Images/AboutUsImages/AboutUsBookPhoto.jpg);
+    background-size: cover;
+    height:auto;
+    font-size: 2.5vw;
+    font-weight: bold;
+    
+}
+.thirdAboutUsBlockArrow{
+    transition: .5s;
+    margin-top:-2vw;
+    width: 7vw;
+}
+.thirdAboutUsBlockExtendedText{
+}
+
+/*АДАПТИВНОСТЬ*/
+

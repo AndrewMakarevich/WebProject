@@ -1,0 +1,189 @@
+body
+{
+	overflow-x: hidden;
+	background-color: black;
+}
+
+
+.Sections
+{
+	margin-top:1vh;
+	position: relative;
+	height: 55vw; 
+	
+}
+@media (max-width: 768px){
+	.Sections
+ {
+	height: 90vw;
+ }
+}
+@media (max-width: 425px){	
+	.Sections
+ {
+	height: 120vw;
+ }
+}
+
+
+/* БЛОК №1 */
+.block1
+{	
+	z-index: 2;	
+	transition: .5s;
+	position: absolute;
+	height: 100%;
+	width:33.3%;	
+	
+}
+.block1 img
+{
+	object-fit: cover;
+    height: 100%;
+	width:100%;	
+}
+.block1:hover
+{	
+    z-index:3;
+	width:100%;	
+}
+
+.block1 .SectionHeader1
+{	
+	position: absolute;
+    margin-left:10%;
+	font-family: serif;
+	font-weight:bold;
+	color:white;
+	font-size: 8vw;
+	cursor:pointer;
+    transition: .5s;
+}
+.block1:hover .SectionHeader1
+{	
+	font-size: 22vw;
+	transition: .5s;
+		
+}
+/* АНИМИРОВАННАЯ ПОЛОСА */
+.SectionHeader1:after{
+	content:"";
+	background-color:white;
+	position: absolute;
+	left: 0;
+	width:0;
+	height: 2px;
+}
+.SectionHeader1:hover:after{
+	transition: 1s;
+	width:100%;
+}
+
+
+/* БЛОК №2 */
+.block2
+{	
+	z-index: 1;	
+	transition: 0.5s;
+	position: absolute;
+	height: 100%;
+	width:33.3%;
+	left: 33.3%;
+}
+.block2 img
+{
+	object-fit: cover;
+    height: 100%;
+	width:100%;		
+}
+.block2:hover
+{
+	z-index: 3;
+	width:100%;	
+	margin-left: -33.3%;
+	width:100%;
+}
+.block2 .SectionHeader2
+{	
+	position: absolute;
+	margin-left:10%;
+	font-family: serif;
+	font-weight:bold;
+	color:white;
+	font-size: 8vw;
+	cursor:pointer;
+    transition: .5s;
+}
+.block2:hover .SectionHeader2
+{	
+	font-size: 22vw;
+	transition: .5s;
+}
+
+.SectionHeader2:after{
+	content:"";
+	background-color:white;
+	position: absolute;
+	left: 0;
+	width:0;
+	height: 2px;
+}
+.SectionHeader2:hover:after{
+	transition: 1s;
+	width:100%;
+}
+
+/* БЛОК №3 */
+.block3
+{	
+	z-index: 1;	
+	transition: .5s;
+	position: absolute;
+	height: 100%;
+	width:33.3%;
+	left: 66.6%;	
+}
+
+.block3 img
+{
+	object-fit: cover;
+    height: 100%;
+	width:100%;		
+}
+
+.block3:hover
+{
+	z-index: 3;
+	width:100%;	
+	margin-left: -66.6%;
+}
+
+.block3 .SectionHeader3
+{	
+	position: absolute;
+	margin-left:5%;
+	font-family: serif;
+	font-weight:bold;
+	color:white;
+	font-size: 8vw;
+	cursor:pointer;
+    transition: .5s;
+}
+.block3:hover .SectionHeader3
+{	
+	font-size: 22vw;
+	transition: .5s;
+}
+
+.SectionHeader3:after{
+	content:"";
+	background-color:white;
+	position: absolute;
+	left: 0;
+	width:0;
+	height: 2px;
+}
+.SectionHeader3:hover:after{
+	transition: 1s;
+	width:100%;
+}

@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Inverkrug; /* Имя шрифта */
+    src: url(../../Fonts/customFont.otf); /* Путь к файлу со шрифтом */
+   }
+
+
+.header{
+    color:black;
+    padding-top:25px;
+    padding-bottom: 25px;
+    font-family: Inverkrug;
+    font-size: 3vw;
+    background-color:lightsalmon;
+}
+    
+
+.regWindow{
+    border-radius:5px;
+    width: 25%;
+    position: relative;
+    margin:auto;
+    margin-top:1vh;
+    background-color:wheat;
+}
+
+
+.regInput{
+    width:15vw;
+    height: 1.4vw;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 1px solid black;
+    background:wheat;
+    margin:auto;
+}
+.regInput:focus {
+    outline: none;
+  }
+.regInput:hover {
+    background-color:thistle;
+    transition: 1s;
+}
+.regLabel{
+    position:absolute;
+    pointer-events: none;
+    transition: .3s;
+    color:rgb(145, 140, 140);
+    padding-left:5vw;
+}
+
+.submitButton{
+    border: none;
+    background:wheat;
+    border-radius:3px;
+}
+.submitButton:hover{
+    background:thistle;
+    transition: .5s;
+}
+
+/* ПОЗИЦИОНИРОВАНИЕ ПОЛЕЙ*/
+.data1{
+    margin-top: 10px;
+}
+.data1,
+.data2,
+.data3,
+.data4,
+.data5,
+.data6{
+    font-size: 0.8vw;
+    padding:5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+    
+}
+
+
+
+/* АНИМАЦИЯ НАВЕДЕНИЯ НА ПОЛЯ*/
+.data1:hover,
+.data2:hover,
+.data3:hover,
+.data4:hover,
+.data5:hover,
+.data6:hover{
+    background-color:thistle;
+    transition: 1s;
+}
+.submitButton{
+    padding-bottom:10px;
+}
+
+/*Текст Перехода к странице входа*/
+.SignInQuestion{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/* АДАПТИВНОСТЬ РЕГИСТРАЦИОННОГО ПОЛЯ*/
+
+@media (max-width: 1000px){
+    .regWindow{
+        width:30%;
+    }
+    .regLabel{
+        padding-left:7vw;
+    }
+    .regInput{
+        height:3vw;
+    }
+}
+@media (max-width: 950px)
+{
+    .regWindow{
+        width:35%;
+    }
+    .regLabel{
+        padding-left:10vw;
+    }
+    .header{
+        font-size: 5vw;
+    }
+} 
+@media (max-width: 650px)
+{
+    .regWindow{
+        width:40%;
+    }
+    .regLabel{
+        padding-left:11.5vw;
+    }
+    .regInput{
+        width:25vw;  
+    }
+} 
+@media (max-width: 515px)
+{
+    .regWindow{
+        width:60%;
+    }
+    .header{
+        font-size: 9vw;
+    }
+    .regLabel{
+        padding-left:11vw;
+    }
+    .regInput{
+        height: 6vw;
+        width: 150px;
+    }
+} 
+@media (max-width: 375px)
+{
+    .regWindow{
+        width:90%;
+    }
+    .header{
+        font-size: 9vw;
+    }
+    .regInput{
+        height: 8vw;
+        width: 200px;
+    }
+    
+} 
