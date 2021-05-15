@@ -13,7 +13,9 @@ import {useRoutes} from './routes.js';
 import { styled } from '@material-ui/core/styles';
 import './adaptiveMenuScript.js';
 import './userNickNameAnimation';
+import './backgroundAnimation.js';
 import Arfa from './Images/arfa.png';
+
 
 import {useAuth, useUserData} from './hooks/auth.hook';
 import {AuthContext,  ClientDataContext} from './context/AuthContext';
@@ -60,7 +62,7 @@ function App() {
         setPersonalData, nickName, firstName, logoutData
       }}>
       <Router>
-  <div className="App">
+  <div className="App" >
 
 <div className="logoText"> ATHRA</div> 
 <img className ="logoPicture" src={Arfa}></img>
@@ -73,7 +75,7 @@ function App() {
     </div>
     
     <div className="sectionsMenu">
-     <button color="primary"><MyLink to="/">Home</MyLink></button>
+     <button color="primary"><MyLink to="/home">Home</MyLink></button>
      <button color="primary"><MyLink to="/about">About us</MyLink></button>
      <button color="primary"><MyLink  to="/articles">Articles</MyLink></button>
      <button color="primary"><MyLink  to="/registration">Registration</MyLink></button>
@@ -93,7 +95,7 @@ function App() {
 </div>
         
     </div>
-<footer className="Footer">
+  <footer className="Footer">
   <div className="footerText"> 
         <div className="text1"><a  href="#">TERMS & CONDITIONS</a></div>
         <span></span>

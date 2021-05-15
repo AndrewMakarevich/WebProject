@@ -9,8 +9,15 @@ body
 {
 	margin-top:1vh;
 	position: relative;
-	height: 55vw; 
+	height: 62vw; 
 	
+}
+
+@media (min-width: 1400px){
+	.Sections
+ {
+	height: 44vw;
+ }
 }
 @media (max-width: 768px){
 	.Sections
@@ -21,7 +28,13 @@ body
 @media (max-width: 425px){	
 	.Sections
  {
-	height: 120vw;
+	height: 135vw;
+ }
+}
+@media (max-width: 320px){	
+	.Sections
+ {
+	height: 178vw;
  }
 }
 
@@ -33,7 +46,8 @@ body
 	transition: .5s;
 	position: absolute;
 	height: 100%;
-	width:33.3%;	
+	width:33.3%;
+		
 	
 }
 .block1 img

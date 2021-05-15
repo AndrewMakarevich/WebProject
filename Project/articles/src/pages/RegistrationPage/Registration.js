@@ -56,9 +56,9 @@ function Registration() {
                     <div className="data5">
                         <label for="password" className="regLabel">Password</label><input className="regInput" name="password" type="password" required onChange={changeHandler}/>
                     </div>    
-                    <div className="data6">
+                    {/* <div className="data6">
                         <label for="password2" className="regLabel">Repeat password</label><input className="regInput" name="password2" type="password" required/>
-                    </div>    
+                    </div>     */}
                     <div>
                          <input className="submitButton" type="submit" value="Зарегистрироваться" onClick={registerHandler}/>
                     </div>

@@ -3,10 +3,28 @@ window.addEventListener("DOMContentLoaded", function(){
     let opened = false;
     const burgerIcon = document.querySelector('.mobileMenuVersion');
     const appBar = document.querySelector('.AppBar');
+    const sectionsMenu = document.querySelector('.sectionsMenu');
     const buttons = document.querySelectorAll('.sectionsMenu button');
     const burgerLineFirst = document.querySelector('.AppBar .mobileMenuVersion .firstSpan');
     const burgerLineSecond = document.querySelector('.AppBar .mobileMenuVersion .secondSpan');
     const burgerLineThird = document.querySelector('.AppBar .mobileMenuVersion .thirdSpan');
+    window.addEventListener("click", function(e){
+       if(e.target != appBar && e.target != sectionsMenu && e.target !=burgerIcon && e.target !=burgerLineFirst && e.target !=burgerLineSecond && e.target !=burgerLineThird){
+           console.log(e.target);
+         if(opened == true){
+                opened=false;
+                burgerLineFirst.style.animation ="none";
+                burgerLineSecond.style.opacity = "1";
+                burgerLineThird.style.animation = "none";
+                buttons.forEach(button =>{
+                    button.style.display = "none";
+                    console.log(opened);
+                });
+                appBar.style.height = "60px";
+                console.log("CLOSED");
+         }
+       }
+    });
     window.addEventListener("resize", function(){
         if(window.innerWidth>635){
             buttons.forEach(button =>{
